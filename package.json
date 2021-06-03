@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rm -rf dist && webpack --mode development",
+    "build": "rm -rf dist && webpack --mode development --config webpack.server.config.js && webpack --mode development",
     "start": "node ./dist/server.js"
   },
   "repository": {
@@ -26,8 +26,11 @@
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.4",
     "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "file-loader": "^6.2.0",
     "html-loader": "^2.1.2",
     "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0",
     "webpack-node-externals": "^3.0.0"
