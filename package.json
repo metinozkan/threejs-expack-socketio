@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/metinozkan/threejs-expack-socketio#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "three": "^0.129.0"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
