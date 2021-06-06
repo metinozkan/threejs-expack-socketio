@@ -1,20 +1,20 @@
+import * as THREE from "three";
 import logMessage from "./js/logger";
 import "./css/style.css";
+
 // Log message to console
-logMessage("A very warm welcome to Expack!");
+logMessage("A very warm welcome to Threejs, Socket, Express and Webpack App!");
 // Needed for Hot Module Replacement
 if (typeof module.hot !== "undefined") {
   module.hot.accept(); // eslint-disable-line no-undef
 }
 /**
- * entry.js
  *
  * This is the first file loaded. It sets up the Renderer,
  * Scene and Camera. It also starts the render loop and
  * handles window resizes.
  *
  */
-import * as THREE from "three";
 
 let camera, scene, renderer;
 let geometry, material, mesh;
